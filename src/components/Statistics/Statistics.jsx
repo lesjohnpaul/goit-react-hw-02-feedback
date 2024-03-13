@@ -14,15 +14,18 @@ export const Statistics = ({
   return (
     <div className={css.divStatistics}>
       <p className={css.labelStat}>
-        <RiEmotionHappyFill className={css.icons} /> Good:
+        <RiEmotionHappyFill className={`${css.icons} ${css.happyIcon}`} /> Good:
         <span className={css.value}> {good}</span>
       </p>
       <p className={css.labelStat}>
-        <MdOutlineSentimentNeutral className={css.icons} /> Neutral:
+        <MdOutlineSentimentNeutral
+          className={`${css.icons} ${css.neutralIcon}`}
+        />{' '}
+        Neutral:
         <span className={css.value}> {neutral}</span>
       </p>
       <p className={css.labelStat}>
-        <FaSadTear className={css.icons} /> Bad:
+        <FaSadTear className={`${css.icons} ${css.sadIcon}`} /> Bad:
         <span className={css.value}> {bad}</span>
       </p>
       <p className={css.labelStat}>
