@@ -1,0 +1,50 @@
+.divStatistics {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  /* Light background for visibility */
+  border-radius: 12px;
+  /* Rounded corners for a modern look */
+box-shadow: 0 8px 16px #0f4172a9;
+  /* Soft shadow for depth */
+  width: auto;
+  max-width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transitions for interaction */
+}
+
+.labelStat {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #495057;
+  /* Slightly darker color for better contrast */
+}
+
+.value {
+  font-weight: bold;
+}
+
+.valuePercentage {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4E9F3D;
+  /* Vibrant green color for percentages */
+}
+
+.icons {
+  fill: #0a3962;
+  /* Dark blue color for icons */
+}
+
+.divStatistics:hover {
+  transform: translateY(-3px);
+  /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+.animateIn {
+  opacity: 0;
+  transform: translateY(-20px);
+  /* Start slightly above */
+  animation: slideIn 0.5s ease forwards;
+}
